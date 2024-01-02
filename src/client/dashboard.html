@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>&Comercial</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="plugins/tables/css/datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="plugins/tables/css/extensions/rowReorder.dataTables.min.css" rel="stylesheet">
+    <link href="plugins/tables/css/extensions/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="plugins/tables/css/extensions/buttons.dataTables.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="produtos.html">
+                    <b class="logo-abbr"><img src="images/logo.png"> </b>
+                    <span class="logo-compact"><img src="./images/logo-compact.png" alt=""></span>
+                    <span class="brand-title">
+                        <img src="images/logo-text.png" height="70vw" width="180vw">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+                                <img src="images/user.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i>
+                                                <span>Profile</span></a>
+                                        </li>
+
+                                        <hr class="my-2">
+                                        <li><a href="index.html"><i class="icon-key"></i> <span>Logout</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">MENU PRINCIPAL</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">
+                            <i class="ion ion-cube"></i><span class="nav-text">Estoque</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="produtos.html">Produtos</a></li>
+                            <li><a href="fornecedores.html">Fornecedores</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="ion ion-ios-calculator"></i><span class="nav-text">Relatorios</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="entrada.html">Entrada/Saída</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="ion ion-ios-book"></i><span class="nav-text">Cardápio</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pratos.html">Pratos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="ion ion-ios-calculator"></i><span class="nav-text">Comandas</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://github.com/alexandre-queiroz/Mycommand/blob/master/apk/MyCommand.apk?raw=true">Download app</a></li>
+                            <li><a href="comandas.html">Visualizar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6">
+
+                        <div class="card gradient-4">
+                            <div class="card-body" id="produtos-comprados">
+                                <h3 class="card-title text-white">Produtos comprados</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">0</h2>
+                                    <p class="text-white mb-0">mês atual - 2020</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-2">
+                            <div class="card-body" id="valor-gasto">
+                                <h3 class="card-title text-white">Valor gasto</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">R$ 0,00</h2>
+                                    <p class="text-white mb-0">mês atual - 2020</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-3">
+                            <div class="card-body" id="vendas-realizadas">
+                                <h3 class="card-title text-white">Vendas realizadas</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">0</h2>
+                                    <p class="text-white mb-0">mês atual - 2020</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-4">
+                            <div class="card-body" id="valor-recebido">
+                                <h3 class="card-title text-white">Valor recebido</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">R$ 0,00</h2>
+                                    <p class="text-white mb-0">mês atual - 2020</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Produtos abaixo do limiar</h4>
+
+                                <div id="limiar">
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-sm-6 col-xxl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Vendas e gastos</h4>
+
+                                <div id="extra-area-chart"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Últimos produtos comprados</h4>
+
+                                <div id="compras">
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; &Comercial 2020</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+    <script src="./plugins/raphael/raphael.min.js"></script>
+    <script src="./plugins/morris/morris.min.js"></script>
+
+    <script src="js/pages/dashboard.js"></script>
+    <script src="js/pages/functions.js"></script>
+
+</body>
+
+</html>
